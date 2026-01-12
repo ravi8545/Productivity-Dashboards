@@ -59,25 +59,58 @@ section.allElems {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
+    position: absolute;
 }
 
-.elem{
-    background-color:var(--tri1) ;
-    height: 400px;
-    width: 330px;
+.elem {
+    background-color: var(--tri1);
+    height: 300px;
+    width: 270px;
     font-size: 30px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    transition: all ease-in 0.5s;
+    cursor: pointer;
+    
 }
-.elem img{
+
+.elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.elem h2{
+
+.elem h2 {
     position: absolute;
     bottom: 5%;
     right: 5%;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.elem:active {
+    scale: 0.9;
+}
+
+.fullElem {
+    height: 100%;
+    width: 100%;
+    background-color: #4e1f00;
+    position: absolute;
+    padding: 30px;
+    font-size: 40px;
+    display: none;
+}
+.back{
+    position: absolute;
+    right: 5%;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size:20px;
+    font-weight: 500;
+    border: 1px solid white;
 }
